@@ -1,5 +1,22 @@
 unit Form;
 
+{
+
+original version 1.00 by wendelb
+
+https://github.com/wendelb/DelphiOTP
+
+version 1.01 created on 12 march 2024 by Skybuck Flying
+
++ IFNDEFS problems with FPC solved for Delphi.
++ Position set to screen center.
++ Controls widened a bit to be able to input/see/handle larger security codes.
+
+Application tested and works ! Nice ! =D
+Application is compatible with google authenticator.
+
+}
+
 interface
 
 uses

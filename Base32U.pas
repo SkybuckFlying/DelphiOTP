@@ -19,7 +19,11 @@ that is also unicode ready, please see the Readme!
 interface
 
 uses
-  {$IFNDEF FPC}System.{$ENDIF}SysUtils;  // For UpperCase (Base32Decode)
+  {$IFDEF FPC}
+   SysUtils; // For UpperCase (Base32Decode)
+  {$ELSE FPC}
+  System.SysUtils; // For UpperCase (Base32Decode)
+  {$ENDIF}
 
 type
   Base32 = class
@@ -32,7 +36,7 @@ type
     /// </summary>
     /// <returns>
     ///   Unicode String containing the ANSI-Data from that Base32-Input
-    /// </returns>
+	/// </returns>
     class function Decode(const inString: String): String;
   end;
 

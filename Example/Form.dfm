@@ -5,16 +5,15 @@ object FormOTP: TFormOTP
   BorderStyle = bsSingle
   Caption = 'One Time Password Example'
   ClientHeight = 236
-  ClientWidth = 141
+  ClientWidth = 188
   Color = clBtnFace
   Font.Charset = DEFAULT_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
+  Position = poScreenCenter
   ScreenSnap = True
-  PixelsPerInch = 96
   TextHeight = 13
   object Label1: TLabel
     Left = 8
@@ -41,7 +40,7 @@ object FormOTP: TFormOTP
   object EdtKey: TEdit
     Left = 8
     Top = 27
-    Width = 121
+    Width = 171
     Height = 21
     TabOrder = 0
   end
@@ -60,7 +59,7 @@ object FormOTP: TFormOTP
   object EdtHOTP: TEdit
     Left = 8
     Top = 122
-    Width = 121
+    Width = 171
     Height = 21
     Enabled = False
     NumbersOnly = True
@@ -69,7 +68,7 @@ object FormOTP: TFormOTP
   object BtnCalculate: TButton
     Left = 8
     Top = 149
-    Width = 121
+    Width = 171
     Height = 25
     Caption = 'Calculate'
     Default = True
@@ -79,7 +78,7 @@ object FormOTP: TFormOTP
   object EdtResult: TEdit
     Left = 8
     Top = 202
-    Width = 121
+    Width = 171
     Height = 21
     ReadOnly = True
     TabOrder = 4
